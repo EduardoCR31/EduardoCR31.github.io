@@ -1,0 +1,103 @@
+.encabezado{
+    object-position: center;
+    text-align: center; 
+    display: inline;
+   
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    text-align: center;
+    margin: 0 10px;
+}
+nav ul li a {
+    color: rgb(222, 19, 134);
+    text-decoration: none;
+}
+.container{
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ .trailer {
+     width: 360px;
+     padding: 10px;
+     background: #7b6f75;
+     border: 2px solid #9b8fa1;
+     text-align: center;
+     border-radius: 5% ;
+     color: #efdddd;
+    
+
+     
+}
+body{
+    background-color: rgb(0, 0, 0);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    margin-left: 10px;
+}
+section{
+    color: #fffdfd;
+}
+header {
+    background: url(../IMG/baner.jpg);
+    width: auto;
+    height: 200px;
+    background-size: cover;
+    background-position:center ;
+    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    text-align: center;
+      
+}
+
+iframe {
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+    opacity: 1;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    image-orientation: flip center;
+    border-radius: 5%;
+    width: 350px;
+    height: 215px;
+  
+}
+
+iframe:hover {
+    transform: scale(1.1) rotateY(10deg); /* Efecto 3D y aumento de tamaño */
+    opacity: 0.7; /* Cambia opacidad al pasar el cursor */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Sombra más fuerte */
+    border-radius: 5%;
+    
+}
+
+.info{
+    object-position: center;
+    text-align: center; 
+    display: inline;
+   
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    display: inline;
+    margin: 0 10px;
+}
+ul li a {
+    color: rgb(22, 15, 118);
+    text-decoration: none;
+}
+.since{
+    object-position: center;
+    text-align: center;
+}
