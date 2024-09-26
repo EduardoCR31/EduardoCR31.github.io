@@ -16,6 +16,10 @@ nav ul li a {
     color: rgb(222, 19, 134);
     text-decoration: none;
 }
+a:hover{
+    /*background-color: #fa0000;*/
+    color: rgb(255, 255, 255);
+    }
 .container{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -24,10 +28,10 @@ nav ul li a {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
  .trailer {
-     width: 360px;
+     width: 25vw;
      padding: 10px;
      background: #7b6f75;
-     border: 2px solid #9b8fa1;
+     border: 2px solid vw#9b8fa1;
      text-align: center;
      border-radius: 5% ;
      color: #efdddd;
@@ -58,13 +62,13 @@ iframe {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     image-orientation: flip center;
     border-radius: 5%;
-    width: 350px;
-    height: 215px;
+    width: 25vw;
+    height: 25vw;
 }
 iframe:hover {
-    transform: scale(1.1) rotateY(10deg); /* Efecto 3D y aumento de tamaño */
-    opacity: 0.7; /* Cambia opacidad al pasar el cursor */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Sombra más fuerte */
+    transform: scale(1.2) rotateY(10deg); /* Efecto 3D y aumento de tamaño */
+    opacity: 1; /* Cambia opacidad al pasar el cursor */
+    box-shadow: 0vw 10vw 20vw rgba(0, 0, 0, 0.5); /* Sombra más fuerte */
     border-radius: 5%;  
 }
 .info{
@@ -81,7 +85,7 @@ ul li {
     margin: 0 10px;
 }
 ul li a {
-    color: rgb(22, 15, 118);
+    color: rgb(19, 19, 187);
     text-decoration: none;
 }
 .since{
