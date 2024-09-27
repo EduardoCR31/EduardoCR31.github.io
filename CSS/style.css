@@ -21,6 +21,13 @@ body{
     border-radius: 5% ;
 
 }
+.imgsource:hover{
+    transform: scale(1.2) rotateY(10deg); /* Efecto 3D y aumento de tamaño */
+    opacity: 1; /* Cambia opacidad al pasar el cursor */
+    box-shadow: 0vw 10vw 20vw rgba(0, 0, 0, 0.5); /* Sombra más fuerte */
+    border-radius: 5%; 
+
+}
 .trailers h3{
     color: rgb(140, 39, 39);
     text-align: center;
