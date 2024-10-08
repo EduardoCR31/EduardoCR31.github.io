@@ -1,7 +1,47 @@
+body{
+    background-image: url(../IMG/encabezado1.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+.container2{
+    transform: scale(0.8);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    justify-content: center;
+    justify-self: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.imgsource{
+    width: 90%;
+    height: 90%;
+    border-radius: 5% ;
+
+}
+.imgsource:hover{
+    transform: scale(1.2) rotateY(10deg); /* Efecto 3D y aumento de tamaño */
+    opacity: 1; /* Cambia opacidad al pasar el cursor */
+    box-shadow: 0vw 10vw 20vw rgba(0, 0, 0, 0.5); /* Sombra más fuerte */
+    border-radius: 5%; 
+
+}
+.trailers h3{
+    color: rgb(140, 39, 39);
+    text-align: center;
+}
+
 .encabezado{
     object-position: center;
     text-align: center; 
     display: inline;   
+}
+
+.encabezado h1{
+    color: rgb(140, 39, 39);
+    text-align: center;
 }
 nav ul{
     list-style: none;
