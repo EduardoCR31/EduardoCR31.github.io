@@ -13,33 +13,33 @@
    <div class="container3">
         <div class="form-content">
             <h1 id="title">Registro</h1>
-             <form>
+             
 
               <div class="input-group">
 
                     <div class="input-field" id="nameinput">
                       <i class="fa-solid fa-user"></i>
-                      <input type="text" placeholder="nombre" required>
+                      <input type="text" placeholder="nombre" id="nombre" required>
                     </div>
                     <div class="input-field" id="nameinput">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="apellido" required>
+                        <input type="text" placeholder="apellido" id="apellido" required>
                       </div>
                       <div class="input-field" id="nameInput">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="usuario" required>
+                        <input type="text" placeholder="usuario" id="usuario" required>
                       </div>
                     <div class="input-field">
                        <i class="fa-solid fa-envelope"></i>
-                       <input type="email" placeholder="correo" required>
+                       <input type="email" placeholder="correo" id="correo" required>
                     </div>
                     <div class="input-field">
                        <i class="fa-solid fa-lock"></i>
-                       <input type="password" placeholder="contraseña" required>
+                       <input type="password" placeholder="contraseña" id="contrasena" required>
                     </div>
                     <div class="input-field">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" placeholder="confirmar contraseña" required>
+                        <input type="password" placeholder="confirmar contraseña" id="confirmarcontrasena" required>
                      </div>
                      <input type="checkbox" id="myCheck" onclick="myFunction()">
                           <label for="myCheck">Acepta el tratamiento de los datos</label>
@@ -51,11 +51,11 @@
                      <br>
                 </div>
                 <div class="btn-field">
-                    <button id="singUp" class="button">Enviar</button>
+                    <button id="singUp" onclick="guardarSitio()"  class="button">Enviar</button>
 
                 </div>
 
-             </form>
+            
 
         </div>
 

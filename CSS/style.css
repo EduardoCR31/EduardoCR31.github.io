@@ -8,6 +8,12 @@
     justify-self: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+#contendorencabezado{
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+}
 .imgsource{
     width: 90%;
     height: 90%;
@@ -82,9 +88,7 @@ header {
     
     width: auto;
     height: 100px;
-    margin: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 5px;
     padding: 0px;
     text-align: justify; 
     background-color: #13c4f5; 
@@ -187,7 +191,6 @@ nav ul {
 .menu-desplegable {
     display: none;
     position: absolute;
-    top: 100%;
     left: 0;
     background-color: #444;
     min-width: 160px;

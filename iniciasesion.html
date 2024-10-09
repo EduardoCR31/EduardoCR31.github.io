@@ -19,21 +19,21 @@
 
                     <div class="input-field" id="nameInput">
                       <i class="fa-solid fa-user"></i>
-                      <input type="text" placeholder="usuario">
+                      <input type="text" placeholder="usuario" id="usuario1" required>
                     </div>
                     <div class="input-field">
                        <i class="fa-solid fa-envelope"></i>
-                       <input type="email" placeholder="correo">
+                       <input type="email" placeholder="correo" id="correo1" required>
                     </div>
                     <div class="input-field">
                        <i class="fa-solid fa-lock"></i>
-                       <input type="password" placeholder="contraseña">
+                       <input type="password" placeholder="contraseña" id="contrasena1" required>
                     </div>
                     <p>Olvidaste tu contraseña <a href="#">Click aquí</a></p>
 
                 </div>
                 <div class="btn-field">
-                    <button id="singIn" type="button" class="disable">Login</button>
+                    <button id="singIn" onclick="guardarSitio1()" type="button" class="disable">Login</button>
 
                 </div>
 
@@ -63,6 +63,6 @@
     </section>
 
 
-    <script src="JS/formulario.js"></script>
+    <script src="JS/iniciasesion.js"></script>
 </body>
 </html>
