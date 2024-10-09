@@ -1,0 +1,248 @@
+body{
+    background-image: url(../IMG/encabezado1.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+.container2{
+    transform: scale(0.8);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    justify-content: center;
+    justify-self: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.imgsource{
+    width: 90%;
+    height: 90%;
+    border-radius: 5% ;
+
+}
+.imgsource:hover{
+    transform: scale(1.2) rotateY(10deg); /* Efecto 3D y aumento de tamaño */
+    opacity: 1; /* Cambia opacidad al pasar el cursor */
+    box-shadow: 0vw 10vw 20vw rgba(0, 0, 0, 0.5); /* Sombra más fuerte */
+    border-radius: 5%; 
+
+}
+.trailers h3{
+    color: rgb(140, 39, 39);
+    text-align: center;
+}
+
+.encabezado{
+    object-position: center;
+    text-align: center; 
+    display: inline;   
+}
+
+.encabezado h1{
+    color: rgb(140, 39, 39);
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    text-align: center;
+    margin: 0 10px;
+}
+nav ul li a {
+    color: rgb(222, 19, 134);
+    text-decoration: none;
+}
+a:hover{
+    /*background-color: #fa0000;*/
+    color: rgb(255, 255, 255);
+    }
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ .trailer {
+     width: 25vw;
+     padding: 10px;
+     background: #656b6a;
+     border: 2px solid vw#2ccadb;
+     text-align: center;
+     border-radius: 5% ;
+     color: #ebe2e2;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    margin-left: 10px;
+}
+section{
+    color: #fffdfd;
+}
+header {
+    background: url(../IMG/baner.jpg);
+    width: auto;
+    height: 200px;
+    background-size: cover;
+    background-position:center ;
+    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    text-align: center;    
+}
+iframe {
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+    opacity: 1;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    image-orientation: flip center;
+    border-radius: 5%;
+    width: 25vw;
+    height: 25vw;
+}
+iframe:hover {
+    transform: scale(1.2) rotateY(10deg); /* Efecto 3D y aumento de tamaño */
+    opacity: 1; /* Cambia opacidad al pasar el cursor */
+    box-shadow: 0vw 10vw 20vw rgba(0, 0, 0, 0.5); /* Sombra más fuerte */
+    border-radius: 5%;  
+}
+.info{
+    object-position: center;
+    text-align: center; 
+    display: inline;   
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    display: inline;
+    margin: 0 10px;
+}
+ul li a {
+    color: rgb(19, 19, 187);
+    text-decoration: none;
+}
+.since{
+    object-position: center;
+    text-align: center;
+}
+.sesion{
+    background-color: rgb(230, 227, 40);
+    background-size: cover;
+    font-size: 30px;
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 970px;
+    margin-right: 0px;
+    border-radius: 50px;
+    font-family: Arial;
+}
+
+.registrate{
+    background-color: rgb(230, 227, 40);
+    background-size: cover;
+    font-size: 30px;
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 970px;
+    margin-right: 0px;
+    border-radius: 50px;
+    font-family: Arial;
+}
+.container3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-content{
+    width: 100%;
+    max-width: 450px;
+    background-color: aqua;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 25px;
+}
+.form-content h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: brown;
+    position: relative;
+}
+
+.input-field{
+    background-color: #656b6a;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 18px 15px;
+    color: aliceblue;
+}
+
+.input::placeholder{
+    color: azure;
+}
+
+.input-field i{
+    margin-left: 15px;
+    color: rgb(28, 31, 26);
+}
+
+.input-field input{
+    width: 100%;
+}
+form p {
+    color: rgb(51, 48, 48);
+    text-align: left;
+    font-size: 13px;
+}
+form p a{
+    color: rgb(241, 62, 12);
+    margin-left: 5px;
+}
+.btn-field {
+    width: 100%;
+    display: flex;
+    
+}
+.btn-field button {
+    flex-basis: 30%;
+    font-size: 16px;
+    background-color: rgb(232, 109, 56);
+    color: black;
+    height: 25px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.input-group {
+    height: 250px;
+}
+.btn-field button.disable {
+    background-color: rgb(226, 240, 30);
+    color: black;
+}
