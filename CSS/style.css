@@ -1,11 +1,4 @@
-body{
-    background-image: url(../IMG/encabezado1.jpg);
-    background-size: 100% auto;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    
-}
+ 
 .container2{
     transform: scale(0.8);
     display: grid;
@@ -77,25 +70,36 @@ a:hover{
      color: #efdddd;
 }
 body{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     margin-left: 10px;
+    color: #000000;
 }
 section{
     color: #fffdfd;
 }
-header {
-    background: url(../IMG/baner.jpg);
+header { 
+    
     width: auto;
-    height: 200px;
-    background-size: cover;
-    background-position:center ;
+    height: 100px;
     margin: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 0px;
-    text-align: center;    
+    text-align: justify; 
+    background-color: #13c4f5; 
+    background-size: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+.logo {
+    max-width: 200px; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+        
+}
+
+
 iframe {
     transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
     opacity: 1;
@@ -131,4 +135,209 @@ ul li a {
 .since{
     object-position: center;
     text-align: center;
+}
+.coment {
+    justify-self: auto;
+
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+
+
+
+
+.boton-menu {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    gap: 2px;
+}
+
+.boton-menu div {
+    background-color: white;
+    height: 3px;
+    gap: 2px;
+    width: 100%;
+   
+
+}
+
+/*.boton-menu:hover {
+    background-color: #555;
+}*/
+
+/* Estilo del contenedor del menú */
+.menu-contenedor {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilo del menú desplegable (oculto por defecto) */
+.menu-desplegable {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 160px;
+    width: 100%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Estilos para los enlaces del menú */
+.menu-desplegable a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-desplegable a:hover {
+    background-color: #555;
+}
+
+/* Mostrar el menú cuando el contenedor tiene la clase 'mostrar' */
+.menu-contenedor.mostrar .menu-desplegable {
+    display: block;
+}
+ /* Media queries para pantallas pequeñas */
+ @media (max-width: 600px) {
+    /* Tamaño más pequeño del botón en móviles */
+    .boton-menu {
+        width: 24px;
+        height: 20px;
+    }
+
+    /* Hacer que el menú ocupe el 100% de la pantalla en móviles */
+    .menu-desplegable {
+        width: 100vw;
+        position: static; /* Para que ocupe toda la pantalla */
+    }
+
+    .menu-desplegable a {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+/* Media queries para pantallas más grandes */
+@media (min-width: 601px) {
+    /* Tamaño más grande del botón en pantallas grandes */
+    .boton-menu {
+        width: 40px;
+        height: 30px;
+    }
+
+    .menu-desplegable {
+        min-width: 200px;
+    }
+
+    .menu-desplegable a {
+        padding: 15px 20px;
+    }
+}
+
+.comentario {
+    size-adjust: auto;
+    color: #000000;
+}
+
+.encuest {
+    color: #000000;
+}
+/* 
+.sesion{
+    background-color: rgb(230, 227, 40);
+    background-size: cover;
+    font-size: 30px;
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 970px;
+    margin-right: 0px;
+    border-radius: 50px;
+    font-family: Arial;
+}
+.registrate{
+    background-color: rgb(230, 227, 40);
+    background-size: cover;
+    font-size: 30px;
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 970px;
+    margin-right: 0px;
+    border-radius: 50px;
+    font-family: Arial;
+} */
+
+.recuadrocuenta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* Ocupa toda la altura de la pantalla */
+    gap: 10px;
+}
+
+/* Estilos para los bloques de sesión y registro */
+.sesion, .registrate {
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* Hover en enlaces para mejor interacción */
+a:hover {
+    color: #f1c40f;
+}
+
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 600px) {
+    .recuadrocuenta {
+        flex-direction: column; /* Pone los botones uno debajo del otro */
+    }
+}
+
+
+
+.like-btn {
+    background-color: #ff4081;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.like-btn:hover {
+    background-color: #ff1a66;
+}
+
+#favoritos-section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }

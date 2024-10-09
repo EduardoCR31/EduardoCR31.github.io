@@ -7,24 +7,47 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <header>     
+    <header>  
+        <div class="menu-contenedor">
+            <button class="boton-menu" onclick="mostrarMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+                <div class="menu-desplegable">
+               
+                        
+                            <a href="#" onclick="navegar('index.html')"> INICIO</a>
+                            
+                            <a href="#" onclick="navegar('animadas.html')">ANIMADAS</a>
+                            
+                            <a href="#" onclick="navegar('accion.html')">ACCION</a>
+                            
+                            <a href="#" onclick="navegar('horror.html')">HORROR</a>
+                            
+                            <a href="#" onclick="navegar('comedia.html')">COMEDIA</a>
+
+                            <a href="#" onclick="navegar('favoritos.html')">FAVORITOS</a>
+                            
+                </div>
+            
+        </div>
+    <img class="logo" src="IMG/logo-cinema.png" alt="Cinema Paraiso">
+</div>
+
+<div class="recuadrocuenta">
+    <div class="sesion">
+        <a href="http://127.0.0.1:5500/iniciasesion.html">Inicia Sesión</a>
+    </div>
+
+    <div class="registrate">
+        <a href="http://127.0.0.1:5500/formulario.html">Registrate</a>
+    </div>
+</div>   
     </header>
    <section class="encabezado">
     <h1>ANIMADAS</h1>
-    <nav>
-        <ul class="start">
-            <li><a href="index.html"> INICIO</a>
-            </li>
-            <li><a href="animadas.html">ANIMADAS</a>
-            </li>
-            <li><a href="accion.html">ACCION</a>
-            </li>
-            <li><a href="horror.html">HORROR</a>
-            </li>
-            <li><a href="comedia.html">COMEDIA</a>
-            </li>
-        </ul>
-    </nav>
+    
     </section>
     
 
@@ -34,22 +57,21 @@
 
 <div class="container">
 
-    <div class="trailer">
+    <div class="trailer" id="trailer1">
         <p>Estreno: 14-Nov-2024</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/sRxWhdXexTc?si=O9ZYojtOyRLxqOiH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <h4>I am T-Rex</h4>
         <p>Después que un dinosaurio hambriento de poder, externo al Gran Valle, ataca al Rey de los dinosaurios por sorpresa, un joven T-Rex escapa y comienza a entrenar jurando no volver hasta que sea el más grande y el más valiente de toda la tierra.</p>
-        
+       
         
     </div>
    
-    <div class="trailer">
+    <div class="trailer" id="trailer2">
         <p>Estreno: 24-Oct-2024</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/hgGUtyFQv0c?si=Nory-0NM360dHKRN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-
-        </iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hgGUtyFQv0c?si=Nory-0NM360dHKRN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <h4>Dragonkeeper</h4>
         <p>Es un tiempo oscuro en la antigua China. Los dragones, una vez aliados de los hombres, han sido cazados y arrojados a calabozos. En una fortaleza distante, una pequeña niña ayuda al último dragón a escapar y se une a él en una búsqueda para recuperar el último huevo de dragón, robado por un hechicero que desea alcanzar la inmortalidad. </p>
+        <button class="like-btn" onclick="darLike('trailer2')">❤️ Like</button>
         
        
     </div>
@@ -103,5 +125,6 @@
 </div>
 <p class="since">&copy PelisMax. since 2024</p>
 </section>
+<script src="APP JS/app.js"></script>
 </body>
 </html>

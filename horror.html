@@ -8,24 +8,47 @@
 </head>
 <body>
     <header> 
+        
+        
+            <div class="menu-contenedor">
+                <button class="boton-menu" onclick="mostrarMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+                    <div class="menu-desplegable">
+                   
+                            
+                                <a href="#" onclick="navegar('index.html')"> INICIO</a>
+                                
+                                <a href="#" onclick="navegar('animadas.html')">ANIMADAS</a>
+                                
+                                <a href="#" onclick="navegar('accion.html')">ACCION</a>
+                                
+                                <a href="#" onclick="navegar('horror.html')">HORROR</a>
+                                
+                                <a href="#" onclick="navegar('comedia.html')">COMEDIA</a>
+                                
+                    </div>
+                
+            </div>
+        <img class="logo" src="IMG/logo-cinema.png" alt="Cinema Paraiso">
+    </div>
     
+    <div class="recuadrocuenta">
+        <div class="sesion">
+            <a href="http://127.0.0.1:5500/iniciasesion.html">Inicia Sesión</a>
+        </div>
+    
+        <div class="registrate">
+            <a href="http://127.0.0.1:5500/formulario.html">Registrate</a>
+        </div>
+    </div>
+   
     </header>
    <section class="encabezado">
     <h1>HORROR</h1>
-    <nav>
-        <ul class="start">
-            <li><a href="index.html"> INICIO</a>
-            </li>
-            <li><a href="animadas.html">ANIMADAS</a>
-            </li>
-            <li><a href="accion.html">ACCION</a>
-            </li>
-            <li><a href="horror.html">HORROR</a>
-            </li>
-            <li><a href="comedia.html">COMEDIA</a>
-            </li>
-        </ul>
-    </nav>
+   
     </section>
     
 
@@ -103,5 +126,6 @@
 </div>
 <p class="since">&copy PelisMax. since 2024</p>
 </section>
+<script src="APP JS/app.js"></script>
 </body>
 </html>

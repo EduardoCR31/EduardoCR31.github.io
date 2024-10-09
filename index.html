@@ -3,34 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trailers estrenos</title>
+    <title>CARTELERA DE CINE </title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <header> 
-    
-    </header>
-   <section class="encabezado">
+        
+        <div class="menu-contenedor">
+            <button class="boton-menu" onclick="mostrarMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+                <div class="menu-desplegable">
+               
+                        
+                            <a href="#" onclick="navegar('index.html')"> INICIO</a>
+                            
+                            <a href="#" onclick="navegar('animadas.html')">ANIMADAS</a>
+                            
+                            <a href="#" onclick="navegar('accion.html')">ACCION</a>
+                            
+                            <a href="#" onclick="navegar('horror.html')">HORROR</a>
+                            
+                            <a href="#" onclick="navegar('comedia.html')">COMEDIA</a>
+                            
+                </div>
+            
+        </div>
+    <img class="logo" src="IMG/logo-cinema.png" alt="Cinema Paraiso">
+</div>
+
+<div class="recuadrocuenta">
+    <div class="sesion">
+        <a href="http://127.0.0.1:5500/iniciasesion.html">Inicia Sesión</a>
+    </div>
+
+    <div class="registrate">
+        <a href="http://127.0.0.1:5500/formulario.html">Registrate</a>
+    </div>
+</div>
+</header> 
+    <section class="encabezado"></section>
     <h1>INICIO</h1>
-    <nav>
-        <ul class="start">
-            <li><a href="index.html"> INICIO</a>
-            </li>
-            <li><a href="animadas.html">ANIMADAS</a>
-            </li>
-            <li><a href="accion.html">ACCION</a>
-            </li>
-            <li><a href="horror.html">HORROR</a>
-            </li>
-            <li><a href="comedia.html">COMEDIA</a>
-            </li>
-        </ul>
-    </nav>
-    </section>
+    <p id="intro">Abajo podras encontrar nuestra cartelera para este mes, como siempre puedes encontrar abajo los diferentes generos.</p>
+   
+   
+</section>
     
-
-
-
     <section class="trailers">
         <h3>CATEGORIAS</h3>
         
@@ -69,7 +89,26 @@
                 
             </div>
         
+
+
 </div>
+<section class="comentario">
+    En la siguiente sección será posible dejar sus comentarios y recomendaciones para las peliculas que deseen en nuestra cartelera 
+</section>
+
+<form class="encuest" id="encuesta">
+    <label for="fname">Nombre:</label><br>
+    <input type="text" id="fname" name="fname" ><br>
+    <label for="pelifav"> Pelicula Favorita:</label><br>
+    <input type="text" id="pelifav" name="pelifav" ><br>
+    <span id="errorMensaje" style="color:red;"></span><br><br>
+    <label for="coment">comentario:</label><br>
+    <textarea id="coment" name="coment" rows="auto" cols="100vw"></textarea>
+  <br><br>
+  
+    <button id="enviar"  type="submit" value="Enviar">enviar</button>
+  </form> 
+  
 <div class="info">
     <ul class="footer">
         <li><a href="informacion-legal">Información Legal</a>
@@ -84,5 +123,6 @@
 </div>
 <p class="since">&copy PelisMax. since 2024</p>
 </section>
+<script src="APP JS/app.js"></script>
 </body>
 </html>
